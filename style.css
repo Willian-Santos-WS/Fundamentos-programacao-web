@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(.5vh + 2vmin);
+  background-color: blanchedalmond;
+}
+
+header {
+  font-size: calc(.2vh + 2vmin);
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  box-shadow: 0px 5px 10px blanchedalmond;
+  background-color: rgb(93, 57, 4);
+  z-index: 1;
+}
+
+header h1, header ul, a {
+  color: rgb(232, 224, 217);
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+header li {
+  margin: 0px 1vw;
+}
+
+header a:hover {
+  color: rgb(93, 57, 4);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(232, 224, 217);
+  transition: all .2s;
+}
+
+/* Botão menu */
+#openHeader {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: calc(3vh + 5vmin);
+  padding: 2px 0;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  background-color: rgb(93, 57, 4);
+  cursor: pointer;
+}
+
+/* Desenhando o botão manualmente */
+#openHeader div {
+  width: 70%;
+  height: 7%;
+  border-radius: 5px;
+  background-color: rgb(232, 224, 217);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+section h2 {
+  color: rgb(93, 57, 4);
+  font-size: calc(1vh + 3vmin);
+  text-decoration: underline;
+  margin: 5vh;
+}
+
+#quemSou {
+  margin: 15vh 0 5vh;
+}
+
+#apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 90%;
+  max-width: 900px;
+  padding: 20px 5px;
+  border-radius: 15px;
+  margin: 5vh;
+  background-color: rgb(93, 57, 4);
+}
+
+#apresentacao h3{
+  color: rgb(232, 224, 217);
+  font-size: calc(1vh + 3vmin);
+  text-align: center;
+  margin: .5vh 0px 1.5vh;
+}
+
+#apresentacao p {
+  color: rgb(201, 196, 191);
+  text-indent: 30px;
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Imagens: laptop, violao e bola*/
+#imgHobbies {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 700px;
+  align-self: center;
+}
+
+#laptop {
+  width: 15vmin;
+}
+
+#violao {
+  transform: rotateZ(-10deg);
+  width: 20vmin;
+}
+
+#bola {
+  width: 13vmin;
+  transition: all 2s infinite;
+  animation: giraBola 3s ease-in-out;
+}
+
+@keyframes giraBola {
+  from {
+    transform: none;
+  } to {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+
+#curriculo {
+  font-size: calc(1vh + 1vmin);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 95%;
+}
+
+#curriculo div {
+  margin: 3vh 0px;
+}
+
+#curriculo h3 {
+  color: rgb(93, 57, 4);
+  font-size: calc(1vh + 2vmin);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#curriculo li ul, #curriculo li ul li, #curriculo p {
+  text-indent: 10px;
+  list-style: none;
+  margin: 5px;
+}
+
+#curriculo li {
+  margin: 20px;
+}
+
+#projetos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  align-self: center;
+}
+
+#portfolio h2 {
+  margin: 3vh 0 2vh;
+}
+
+#portfolio a {
+  position: relative;
+  color: rgb(201, 196, 191);
+  font-size: calc(1vh + 1vmin);
+  display: block;
+  width: 70%;
+  max-width: 250px;
+  padding: 10px;
+  margin: 1.5vh 5vw;
+  border-radius: 15px;
+  background-color: rgb(93, 57, 4);
+}
+
+#portfolio a:hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+#portfolio a img {
+  border-radius: 10px 10px 5px 5px;
+  width: 100%;
+  aspect-ratio: 3/1;
+}
+
+#portfolio a h4 {
+  color: rgb(232, 224, 217);
+  margin: 5px 0px;
+}
+
+#cdg img{
+  opacity: .7;
+}
+
+#portfolio a span {
+  color: rgb(93, 57, 4);
+  font-weight: bolder;
+  font-size: calc(1.5vh + 2vmin);
+  text-shadow: 0px 0px 10px rgb(93, 57, 4);
+  position: absolute;
+  top: 25px;
+  left: 15%;
+}
+
+#contato form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: rgb(232, 224, 217);
+  width: 90%;
+  max-width: 700px;
+  padding: 50px;
+  margin: 5vh 0;
+  border-radius: 20px;
+  background-color: rgb(93, 57, 4);
+}
+
+#contato input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#contato textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#contato #submit {
+  width: 50%;
+  margin: 30px auto 0;
+}

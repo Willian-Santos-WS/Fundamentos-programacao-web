@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Links CSS e JavaScript-->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <title>Willian Santos</title>
+</head>
+
+<body>
+  <header>
+    <h1>Willian Santos</h1>
+    <!--Navegar na página-->
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </header>
+
+  <!--Botão para mostrar menu-->
+  <button id="openHeader" onclick="openHeader()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+
+  <!--Seção principal-->
+  <section id="sobre">
+    <h2 id="quemSou">Quem sou</h2>
+
+    <!--Introdução sobre mim-->
+    <div id="apresentacao">
+      <h3>Olá! Eu sou o Willian Santos...</h3>
+      <p>
+        Sou um jovem de 19 anos nascido no interior do Nordeste, que mudou-se recentemente ao estado de São Paulo em busca de novos desafios e aprendizados.
+      </p>
+
+      <p>
+        Atualmente, trabalho com logística/comércio exterior em uma construtora de usinas hidroelétricas mas, embora ame o que faço, minhas paixões sempre foram estudar desenvolvimento web, tocar violão e realizar atividades físicas, como musculação e jogar futebol. Teria facilmente me tornado um grande jogador de futebol (se não fosse o joelho, é claro...), de qualquer forma, sigo trabalhando, treinando e estudando com este talento oculto.
+      </p>
+    </div>
+
+    <div id="imgHobbies">
+      <img id="laptop" src="laptop_PNG5922.png" alt="Laptop">
+      <img id="violao" src="violao.png" alt="Violão" >
+      <img id="bola" src="bola.png" alt="Bola" >
+    </div>
+  </section>
+
+  <section id="formacao">
+    <h2 id="formacaoHabilidades">Formação e Habilidades</h2>
+
+    <div id="curriculo">
+      <div id="formAcadem">
+        <h3>Formação Acadêmica</h3>
+        <ul>
+          <li>
+            <h4>Centro Universitário Internacional UNINTER (Cursando)</h4>
+            <p>Tecnólogo Análise e Desenvolvimento de Sistemas - Distância (Início: 2024)</p>
+          </li>
+          <li>
+            <h4>Escola de Referência em Ensino Fundamental Sérgio Magalhães</h4>
+            <p>Ensino Médio Completo (Concluído em 2022)</p>
+          </li>
+          <li>
+            <h4>Prepara - Cursos Profissionalizantes</h4>
+            <ul>
+              <li>Rotinas Administrativas (65 horas - Concluído em 2021)</li>
+              <li>Operador de Computador (73 horas - Concluído em 2020)</li>
+              <li>Montagem e Manutenção (116 horas - Concluído em 2019)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Habilidades</h3>
+        <ul>
+          <li>Pacote Office</li>
+          <li>Inglês básico</li>
+          <li>Desenvolvimento Web (HTML5, CSS3 e JavaScript)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Experiência Profissional</h3>
+        <ul>
+          <li>
+            <h4>Andritz Hydro (Atual)</h4>
+            <p>Jovem Aprendiz - Supply Chain (início: 2023)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+
+    <div id="projetos">
+      <a href="https://willian-santos-ws.github.io/Primeiro_Projeto/" target="_blank">
+        <img src="calculadora.png" alt="Calculadora Simples">
+        <h4>Calculadora Simples</h4>
+        <p>Este foi meu primeiro projeto independente e, apesar de seu código fonte não ser o ideal, tenho um enorme carinho por ele...</p>
+      </a>
+
+      <a href="https://willian-santos-ws.github.io/Gerenciador-de-clientes/" target="_blank">
+        <img src="gerenciador.png" alt="Gerenciador de Clientes">
+        <h4>Gerenciador de Clientes</h4>
+        <p>Este é um projeto pessoal que desenvolvi para armazenar informações sobre os serviços solicitados pelos clientes em uma antiga oficina mecânica, onde trabalhei informalmente.</p>
+      </a>
+
+      <a id="cdg">
+        <img src="cgd.png" alt="Casa dos Gatos">
+        <span>Em Breve...</span>
+        <h4>Casa dos Gatos</h4>
+        <p>
+          Este ainda é um projeto em desenvolvimento. <br>
+          Estamos criando uma página para divulgar a ONG Casa dos Gatos, que é responsável por resgatar, cuidar e direcionar gatinhos  de rua aos seus futuros familiares.
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+
+    <h3>Gostaria de falar comigo? Envie-me uma mensagem!</h3>
+
+    <form>
+        <label for="name">Nome:</label>
+        <input id="name" type="text" placeholder="Digite seu nome aqui"> <br>
+
+        <label for="email">E-mail:</label> 
+        <input id="email" type="email"> <br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" placeholder="Deixe sua mensagem"></textarea>
+      
+        <input id="submit" type="submit" value="Enviar">
+    </form>
+  </section>
+
+
+</body>
+</html>
